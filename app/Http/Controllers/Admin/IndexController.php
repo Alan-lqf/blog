@@ -10,8 +10,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $user = DB::table('user')->where('user_id','>',1)->get();
-        dd($user);
+
        return view('welcome');
     }
 }
