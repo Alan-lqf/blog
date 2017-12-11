@@ -18,7 +18,7 @@
 
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-    Route::get('login','IndexController@login');
+    Route::get('login','LoginController@login');
     Route::get('index','IndexController@index');
     Route::resource('article','ArticleController');
 });
