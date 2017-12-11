@@ -20,6 +20,7 @@
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('login','LoginController@login');
     Route::get('index','IndexController@index');
+    Route::get('test','IndexController@test');
 });
 
 
